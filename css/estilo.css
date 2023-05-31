@@ -1,0 +1,387 @@
+html, body, .capa {
+	height: 100%;
+	overflow: auto;
+}
+
+.capa{
+    display: table;
+    width: 100%;
+}
+
+.texto-capa{
+    text-align: center;
+    color: #fff;
+    display: table-cell;/*comportamento de 
+    tabela de célula*/
+    vertical-align: middle;
+}
+
+/*Botões*/
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	}
+	
+	.btn-roxo:hover{
+		background-color: white;
+		color: black;
+		border: 2px solid black;
+	}
+	
+	.btn-roxo{
+		background: #11a7ec;
+	}
+	
+	
+	.btn-branco{
+		border: 2px solid white}
+	
+		.btn-branco:hover{
+			background-color: #11a7ec;
+			color: black;
+		}
+
+		h1{
+			font-size: 100px;
+			font-weight: 900;
+			letter-spacing: -0.05em;
+			margin-bottom: 50px;
+		}
+
+body{
+    background: url('../img/concert-2527495_1280.jpg');
+	background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('../img/logo\ agenda.jpg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparente {
+	padding: 10px 10px;
+	background: rgba(1, 106, 138, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+	color: #9bf0e1;
+	background: none;
+}
+
+#divBusca{
+	background-color:white;
+	border:solid 2px white;
+	border-radius:10px;
+	width:190px;
+	height:32px;
+  }
+  
+  #txtBusca{
+	float:left;
+	background-color:transparent;
+	padding-left:5px;
+	font-size:18px;
+	border:none;
+	height:32px;
+	width:191px;
+  }
+  
+  #btnBusca{
+	border:none;
+	float:inline-end;
+	height:32px;
+	border-radius:0 7px 7px 0;
+	width:70px;
+	font-weight:bold;
+	background:#5F9EA0;
+  }
+
+
+
+/*shows*/
+#shows{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	align-content: center;
+	}
+
+	h1{
+		font-size: 50px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-align: center;
+	}
+
+	h3{
+		font-size: 35px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+	}
+
+	#shows h2,h3{
+		color: #11a7ec;
+	}
+
+	/**.gallery {
+		width: 1280px;
+		height: 720px;
+		position: relative;
+		display: flex;
+		overflow: auto;
+		scroll-snap-type: x mandatory;
+		
+	}
+
+	.gallery img{
+		width: 100%;
+		height: 100%;
+		position: sticky;
+		left: 0;
+		flex-shrink: 0;
+		object-fit: fill;
+		scroll-snap-align: start;
+	}**?/
+
+/*teatro*/
+#teatro{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	color: white;
+	background: #11a7ec;
+}
+#teatro h3{
+	color: #9bf0e1;
+}
+
+.card {
+	height: 300px;
+	width: 300px;
+	border-radius: 4px;
+	display: grid;
+	place-items: center;
+	grid-template-areas: "main";
+	overflow: hidden;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.card > * {
+	grid-area: main;
+}
+
+.card > .image {
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	transition: transform 400ms, filter 400ms;
+}
+
+.card > .text {
+	opacity: 0;
+	color: white;
+	font-size: 1.8rem;
+	transition: opacity 400ms, transform 400ms;
+}
+
+.card:is(:hover, :focus) > .image {
+	transform: scale(1.1);
+	filter: brightness(0.4);
+}
+
+.card:is(:hover, :focus) > .text {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+/*palestras*/
+#Palestras{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	}
+
+	.palestras{
+		padding: 10px 0px 10px 0px;
+	}
+
+	h2{
+		font-size: 50px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+	}
+
+	h3{
+		font-size: 35px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+	}
+
+	.box-container{
+		display: flex;
+		align-items: grid;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 1rem 0;
+	}
+	
+	.box-container .box{
+		height: 30rem;
+		width: 36rem;
+		border-radius: 1rem;
+		margin: 30px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	
+	.box-container .box img{
+		height: 100%;
+		width: 100%;
+		object-fit: fill;
+	}
+
+	#Palestras h2,h3{
+		color: #11a7ec;
+	}
+
+	#rodape h4{
+		color: #00060a;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	footer{
+		background: black;
+		padding: 50px 0px 20px 0px;
+		position: relative;
+	}
+
+
+	.contato .row{
+		background: #11a7ec;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap; 
+	 }
+	 .contato .row .content{
+		flex: 1 1 30rem;
+		padding: 4rem;
+		padding-bottom: 0;
+	}
+	.contato .row form{
+		flex: 1 1 45rem;
+		padding: 2rem;
+		margin: 2rem;
+		margin-bottom: 4rem;
+	}
+	
+	.contato .row form .box{
+		padding: 1.5rem;
+		margin: 1rem 0;
+		color: black;
+		text-transform: none;
+		font-size: 1.7rem;
+		width: 100%;
+	}
+	
+	.contato .row form .box::placeholder{
+		text-transform: capitalize;
+	}
+	
+	.contato .row form .mensagem{
+		height: 15rem;
+		resize: none;
+	}
+	
+	.contato .row .content .title{
+		text-transform: uppercase;
+		color: white;
+		font-size: 3rem;
+		padding-bottom: 2rem;
+	}
+	
+	.contato .row .content .info h3{
+		display: flex;
+		align-items: center;
+		font-size: 2rem;
+		color: white;
+		padding: 1rem 0;
+		font-weight: normal;
+	}
+	
+	.contato .row .content .info h3 i{
+		padding-right: 1rem;
+		color: white;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	@media screen and (max-width: 767px){
+		h1{
+			font-size: 50px;
+		}
+		.btn-custom{
+			margin: 10px 15px;
+		}
+	
+	}
+	
+	@media screen and (min-width: 768px){
+		h1{
+			font-size: 70px;
+		}
+	}
+	
+	@media screen and (min-width:992px){
+		h1{
+			font-size: 100px;
+		}
+	}
+	
+	@media screen and (min-width:1200px){
+		h1{
+			font-size: 100px;
+		}
+	}
+	
+	/*fim media queries*/

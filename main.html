@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Eventos</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+
+    <style>
+      label{ cursor: pointer;}
+      #coracao { display: none;}
+      #coracao:checked+label>svg {
+          animation: preencher;
+          animation-duration: .5s;
+          animation-fill-mode: forwards;
+      }
+      @keyframes preencher {
+          0% {
+              fill: transparent;
+          }
+          100% {
+              fill: #19b425;
+          }
+      }
+
+      label{ cursor: pointer;}
+      #coracao1 { display: none;}
+      #coracao1:checked+label>svg {
+          animation: preencher;
+          animation-duration: .5s;
+          animation-fill-mode: forwards;
+      }
+      @keyframes preencher {
+          0% {
+              fill: transparent;
+          }
+          100% {
+              fill: #19b425;
+          }
+      }
+
+      label{ cursor: pointer;}
+      #coracao2 { display: none;}
+      #coracao2:checked+label>svg {
+          animation: preencher;
+          animation-duration: .5s;
+          animation-fill-mode: forwards;
+      }
+      @keyframes preencher {
+          0% {
+              fill: transparent;
+          }
+          100% {
+              fill: #19b425;
+          }
+      }
+
+      label{ cursor: pointer;}
+      #coracao3 { display: none;}
+      #coracao3:checked+label>svg {
+          animation: preencher;
+          animation-duration: .5s;
+          animation-fill-mode: forwards;
+      }
+      @keyframes preencher {
+          0% {
+              fill: transparent;
+          }
+          100% {
+              fill: #19b425;
+          }
+      }
+  </style>
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+            <div class="container">
+                <!--header-->
+                <div class="navbar-header">
+
+                <!--botao toggle-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegação">
+                    <span class="sr-only">alternar navegação</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href="index.html" class="navbar-brand">
+          <a href=""><span class="img-logo">Agenda Eventos</span></a>
+        </a>
+
+      </div>
+
+      <!-- navbar -->
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#shows">Shows</a></li>
+          <li><a href="#teatro">Teatro</a></li>
+          <li><a href="#Palestras">Workshops</a></li>
+          <li class="divisor" role="separator"></li>
+          <li><a href="">Entrar</a></li>
+          <li><a href="">Cadastro</a></li>
+          <li class="divisor" role="separator"></li>
+          <li><input type="text" id="txtBusca" placeholder="Buscar..." style="color: white;"/>
+        <button id="btnBusca">Buscar</button></li>
+        </ul>
+      </div>
+    
+      
+    </div><!-- /container -->
+  </nav><!-- /nav -->
+
+  <div class="capa">
+    <div class="texto-capa">
+    <h1>Agenda Eventos</h1>
+    <a href="#shows" class="btn-custom btn-roxo btn-lg">Shows</a>
+    <a href="#teatro" class="btn btn-custom btn-branco btn-lg">Teatro</a>
+    <a href="#Palestras" class="btn-custom btn-roxo btn-lg">Workshops</a>
+    
+    </div>
+    
+    
+    </div><!--capa-->
+
+    <!--conteúdos-->
+
+<section id="shows" class="shows">
+    <div class="container">
+      
+  
+        <!--shows-->
+        <div class="container">
+        <h2>Shows</h2>
+
+        <h3>Confira</h3>
+  <p>Confira as principais atrações musicais em Fevereiro!</p>
+        </div><!--shows-->
+
+        <ul class="box-container">
+          <div class="box">
+
+            <input type="checkbox" id="coracao" />
+            <label for="coracao">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+        </label>
+          <li><a class="card" href="">
+        
+          <img class="image" src="img/cartazes/cartaz.jpg" alt="">
+            <p class="text"> Music Festival - 2023 </p>
+          
+          </a></li>
+        </div>
+      
+        <div class="box">
+
+          <input type="checkbox" id="coracao1" />
+          <label for="coracao1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+          <li><a class="card" href="">
+        
+          <img class="image" src="img/cartazes/cartaz vanessa.jpg" alt="">
+            <p class="text"> Turnê Vem Doce - 2023 </p>
+          
+          </a></li>
+        </div>
+      
+        <div class="box">
+          <input type="checkbox" id="coracao2" />
+          <label for="coracao2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+          <li><a class="card" href="">
+        
+          <img class="image" src="img/cartazes/cartaz gilberto.jpg" alt="">
+            <p class="text"> Gilberto Gil in Concert </p>
+          
+          </a></li>
+        </div>
+      
+        <div class="box">
+          <input type="checkbox" id="coracao3" />
+          <label for="coracao3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+          <li><a class="card" href="">
+        
+          <img class="image" src="img/cartazes/cartaz djavan.jpeg" alt="">
+            <p class="text"> Djavan em: Turnê D </p>
+          
+          </a></li>
+        </div>
+      
+        <div class="box">
+          <input type="checkbox" id="coracao" />
+          <label for="coracao">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+        <li><a class="card" href="">
+        
+          <img class="image" src="img/cartazes/cartaz babylon.png" alt="">
+            <p class="text"> Casa Babylon - Olinda 23 </p>
+          
+          </a></li>
+        </div>
+      
+        <div class="box">
+          <input type="checkbox" id="coracao1" />
+          <label for="coracao1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+        <li><a class="card" href="">
+        
+          <img class="image" src="img/cartazes/cartaz dbeb.jpeg" alt="">
+            <p class="text"> De Bar Em Bar - 2023 </p>
+          
+          </a></li>
+        </div>
+      
+        <div class="box">
+          <input type="checkbox" id="coracao2" />
+          <label for="coracao2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+          <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz pega.png" alt="">
+              <p class="text"> Pega Vareta - 2023 </p>
+            
+            </a></li>
+          </div>
+      
+          <div class="box">
+            <input type="checkbox" id="coracao3" />
+          <label for="coracao3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+            <li><a class="card" href="">
+            
+              <img class="image" src="img/cartazes/cartaz olinda.png" alt="">
+                <p class="text"> Olinda Beer - 2023 </p>
+              
+              </a></li>
+            </div>
+      
+        </ul>
+  </div>
+  
+      </div><!--container-->
+  </section>
+  
+  <!--segunda section-->
+  <section id="teatro">
+  <div class="container">
+  <!--teatro-->
+  <div class="text">
+  <h2>Teatro</h2>
+  
+  <h3>Confira</h3>
+  <p>Confira as principais atrações teatrais em Fevereiro!</p>
+
+  <!--img teatro-->
+  <ul class="box-container">
+    <div class="box">
+      <input type="checkbox" id="coracao" />
+          <label for="coracao">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+    <li><a class="card" href="">
+  
+    <img class="image" src="img/cartazes/cartaz saltimbancos.jpg" alt="">
+      <p class="text"> Espetáculo Os Saltimbancos </p>
+    
+    </a></li>
+  </div>
+
+  <div class="box">
+    <input type="checkbox" id="coracao1" />
+          <label for="coracao1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+    <li><a class="card" href="">
+  
+    <img class="image" src="img/cartazes/cartaz wandinha.jpg" alt="">
+      <p class="text"> Espetáculo Wandinha </p>
+    
+    </a></li>
+  </div>
+
+  <div class="box">
+    <input type="checkbox" id="coracao2" />
+          <label for="coracao2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+    <li><a class="card" href="">
+  
+    <img class="image" src="img/cartazes/cartaz stand.jpg" alt="">
+      <p class="text"> Stand Up Os Comédia </p>
+    
+    </a></li>
+  </div>
+
+  <div class="box">
+    <input type="checkbox" id="coracao3" />
+          <label for="coracao3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+    <li><a class="card" href="">
+  
+    <img class="image" src="img/cartazes/cartaz opera.jpg" alt="">
+      <p class="text"> O Fantasma da Ópera </p>
+    
+    </a></li>
+  </div>
+
+  <div class="box">
+    <input type="checkbox" id="coracao" />
+          <label for="coracao">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+  <li><a class="card" href="">
+  
+    <img class="image" src="img/cartazes/cartaz paixao.jpg" alt="">
+      <p class="text"> Paixão de Cristo </p>
+    
+    </a></li>
+  </div>
+
+  <div class="box">
+    <input type="checkbox" id="coracao1" />
+          <label for="coracao1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+  <li><a class="card" href="">
+  
+    <img class="image" src="img/cartazes/cartaz peca.jpg" alt="">
+      <p class="text"> O Impostor Geral </p>
+    
+    </a></li>
+  </div>
+
+  <div class="box">
+    <input type="checkbox" id="coracao2" />
+          <label for="coracao2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+    <li><a class="card" href="">
+    
+      <img class="image" src="img/cartazes/cartaz romeo e juliet.jpg" alt="">
+        <p class="text"> Romeu e Julieta </p>
+      
+      </a></li>
+    </div>
+
+    <div class="box">
+      <input type="checkbox" id="coracao3" />
+          <label for="coracao3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+      <li><a class="card" href="">
+      
+        <img class="image" src="img/cartazes/cartaz teatro.jpg" alt="">
+          <p class="text"> Festival Teatro para Crianças </p>
+        
+        </a></li>
+      </div>
+
+  </ul>
+
+</div>
+  
+  
+  </section>
+
+  <section id="Palestras" class="palestras">
+    <div class="container">
+      <div class="row">
+        
+          <h2>Workshops</h2>
+          
+          <h3>Confira</h3>
+          <p>Confira as principais palestras em Fevereiro!</p>
+          
+          </div>
+        
+          <ul class="box-container">
+            <div class="box">
+              <input type="checkbox" id="coracao" />
+          <label for="coracao">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+            <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz2.jpg" alt="">
+              <p class="text"> Marketing Digital </p>
+            
+            </a></li>
+          </div>
+        
+          <div class="box">
+            <input type="checkbox" id="coracao1" />
+          <label for="coracao1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+            <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz workshop.jpeg" alt="">
+              <p class="text"> Workshop Conteúdo Digital </p>
+            
+            </a></li>
+          </div>
+        
+          <div class="box">
+            <input type="checkbox" id="coracao2" />
+          <label for="coracao2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+            <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz workshop2.png" alt="">
+              <p class="text"> Curso de Mixologia </p>
+            
+            </a></li>
+          </div>
+        
+          <div class="box">
+            <input type="checkbox" id="coracao3" />
+          <label for="coracao3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+            <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz workshop3.jpg" alt="">
+              <p class="text"> MAM Cursos - Artes Visuais </p>
+            
+            </a></li>
+          </div>
+        
+          <div class="box">
+            <input type="checkbox" id="coracao" />
+          <label for="coracao">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+          <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz workshop4.png" alt="">
+              <p class="text"> Na Rota do Futuro </p>
+            
+            </a></li>
+          </div>
+        
+          <div class="box">
+            <input type="checkbox" id="coracao1" />
+          <label for="coracao1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+          <li><a class="card" href="">
+          
+            <img class="image" src="img/cartazes/cartaz workshop5.png" alt="">
+              <p class="text"> Aplicação de Papel de Parede </p>
+            
+            </a></li>
+          </div>
+        
+          <div class="box">
+            <input type="checkbox" id="coracao2" />
+          <label for="coracao2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+            <li><a class="card" href="">
+            
+              <img class="image" src="img/cartazes/cartaz workshop6.png" alt="">
+                <p class="text"> Imersão Clínica de Aves </p>
+              
+              </a></li>
+            </div>
+        
+            <div class="box">
+              <input type="checkbox" id="coracao3" />
+          <label for="coracao3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+      </label>
+              <li><a class="card" href="">
+              
+                <img class="image" src="img/cartazes/cartaz workshop7.png" alt="">
+                  <p class="text"> Curso de Bartender Profissional </p>
+                
+                </a></li>
+              </div>
+        
+          </ul>
+    </div>
+
+
+
+  </section>
+
+  <section class="contato" id="contato">
+    <h1 class="heading" style="color: white;">Contato</h1>
+<div class="row">
+<div class="content">
+<h3 class="title">Contato</h3>
+<div class="info">
+    <h3>
+        <i class="fas fa-envelope"> contato@agendaeventos.com
+        </i>  
+    </h3>
+    
+
+    
+    <h3>
+        <i class="fas fa-phone"> +55 81 98512-6176 </i>
+    </h3>
+
+    <h3>
+        <i class="fas fa-map-marker-alt"> Recife, PE, Brasil</i> 
+    </h3>
+
+</div>
+
+</div>
+
+<form action="">
+    <input type="text" placeholder="name" class="box">
+    <input type="email" placeholder="email" class="box">
+    <input type="text" placeholder="project" class="box">
+    <textarea name="" id="" cols="30" rows="10" class="box mensagem" placeholder="mensagem"></textarea>
+
+    <button type="submit" class="btn"> Send
+        <i class="fas fa-paper-plane"></i> 
+    </button>
+
+</form>
+</div><!--row-->
+
+</section>
+  
+  <!--Rodapé-->
+  <footer id="rodape">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-2">
+      <span class="img-logo">Spotify</span>
+  </div>
+  
+  <div class="col-md-2">
+  <h4>Sobre</h4>
+  <ul class="nav">
+    <li><a href="#">Quem Somos</a></li>
+    <li><a href="#">Política de Privacidade</a></li>
+    <li><a href="#">Termos de Uso</a></li>
+    <li><a href="#">Newsletter</a></li>
+  </ul>
+  </div>
+  
+  <div class="col-md-2">
+  <h4>Serviços</h4>
+  <ul class="nav">
+    <li><a href="#">Agenda</a></li>
+    <li><a href="#">Contato</a></li>
+    <li><a href="#">Informações</a></li>
+  </ul>
+  </div>
+  
+  <div class="class-col-md-2">
+    <h4>Mais Agenda</h4>
+    <ul class="nav">
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#">Siga-nos</a></li>
+      <li><a href="#">Trabalhe conosco</a></li>
+    </ul>
+  </div>
+  
+  <div class="class-col-md-4">
+    <ul class="nav">
+      <li class="item-rede-social"><a href="#"><img src="img/facebook.png"></a></li>
+      <li class="item-rede-social"><a href="#"><img src="img/twitter.png"></a></li>
+      <li class="item-rede-social"><a href="#"><img src="img/instagram.png"></a></li>
+    </ul>
+  </div>
+  
+  
+  </div><!--row-->
+  </div><!--container-->
+  
+
+  
+  
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
